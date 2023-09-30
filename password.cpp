@@ -21,8 +21,13 @@ string getPassword(int length){
 
 int main(){
     int length;
-    cout << "Enter length of the password: ";
+    cout << "Enter length of the password (minimum length of 8 is required): "; 
     cin >> length;
+    if(length < 8){
+        cout << "Invalid length" << endl << "Can't generate Password for length less than 8" << endl;
+        main();
+        exit(0);
+    }
     string password = getPassword(length);
     cout << "Generated Password : " << password << endl;
 
