@@ -8,7 +8,7 @@ using namespace std;
 
 string getPassword(int length){
     string password = "";
-    string characters = "aquickbrownfoxjumpsoverthelazydogAQUICKBROWNFOXJUMPSOVERTHELAZYDOG0123456789";
+    string characters = "aquickbrownfoxjumpsoverthelazydog@#$%&AQUICKBROWNFOXJUMPSOVERTHELAZYDOG0123456789";
     int charSize = characters.size();
     srand(time(0));
     int randomIndex;
